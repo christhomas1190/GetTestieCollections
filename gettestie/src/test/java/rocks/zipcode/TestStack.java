@@ -5,6 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Stack;
 
@@ -40,6 +41,16 @@ public class TestStack {
 
         assertEquals(2, list.size());
         assertEquals("Banana", list.get(0));
+    }
+    @Test
+    public void hashMap(){
+        HashMap<String, Integer> map= new HashMap<>();
+        map.put("Banana", 2);
+        map.put("Avocado", 3);
+
+        assertEquals(2,map.size());
+        assertTrue(map.containsKey("Avocado"));
+
     }
     // Make a bigger test exercising more Stack methods.....
 }
