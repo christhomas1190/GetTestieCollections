@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Stack;
 
@@ -31,6 +32,14 @@ public class TestStack {
         assertTrue(set.contains("Strawberries"));
         assertTrue(set.contains("Blueberries"));
     }
+    @Test
+    public void arrayList(){
+        ArrayList<String> list= new ArrayList<>();
+        list.add("Banana");
+        list.add("Peanut Butter");
 
+        assertEquals(2, list.size());
+        assertEquals("Banana", list.get(0));
+    }
     // Make a bigger test exercising more Stack methods.....
 }
